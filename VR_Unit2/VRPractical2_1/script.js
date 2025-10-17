@@ -22,10 +22,10 @@ window.addEventListener("DOMContentLoaded",function() {
 function createCloud (x,y,z){
   let Cloud = document.createElement("a-entity");
 
-  let air = documentElement("a-sphere");
-  air.setAttribute("color","green");
+  let air = documentElement("a-cone");
   air.setAttribute("position",{x:0,y:5,z:0});
-  air.setAttribute("width","2");
+  air.setAttribute("color","blue");
+  air.setAttribute("height","2");
   Cloud.append(air);
 
   Cloud.setAttribute("position",{x:x, y:y, z:z});
