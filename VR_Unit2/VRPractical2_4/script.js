@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded",function() {
     let rocket = new Rocket(x,1,z);
 
   }
-    box = document.querySelector("#rocket");
+    Rocket = document.querySelector("#Rocket");
 
     box.a = 0.1;
     box.da = .01;
@@ -21,8 +21,8 @@ window.addEventListener("DOMContentLoaded",function() {
 })
 
 function loop(){
-        box.a+= box.da;
-        box.setAttribute("position", {x:0,y:1,z:0});
+      box.a+= box.da;
+      Rocket.setAttribute("position", {x:box.a,y:box.a,z:box.da});
 
   
   window.requestAnimationFrame( loop );
