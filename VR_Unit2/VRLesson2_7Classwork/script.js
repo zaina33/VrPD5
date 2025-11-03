@@ -11,6 +11,8 @@ window.addEventListener("DOMContentLoaded",function() {
 })
 function loop(){
   //Challenge 5: Make all the dudes jump.
-  
+  if(this.y>10 || this.y<-10){
+    this.dy =- this.dx;
+  }
   window.requestAnimationFrame( loop );
 }
